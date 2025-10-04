@@ -22,13 +22,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Copy IP to clipboard
-function copyToClipboard(elementId) {
+function copyToClipboard(elementId, btn) {
   const element = document.getElementById(elementId);
   const text = element.textContent;
   
   navigator.clipboard.writeText(text).then(function() {
     // Show feedback
-    const btn = event.target;
     const originalText = btn.textContent;
     btn.textContent = "Kopiert!";
     setTimeout(function() {
