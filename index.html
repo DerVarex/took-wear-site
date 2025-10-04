@@ -7,25 +7,124 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <script src="script.js"></script>
-  <!-- Hero / Header -->
-  <header class="apple-glass">
-    <h1>Willkommen auf TOOK WEAR!</h1>
-    <p>Dein Minecraft Wargear Server – Action & Strategie auf höchstem Level!</p>
-  </header>
+  <!-- Navigation Bar -->
+  <nav class="navbar apple-glass">
+    <div class="nav-container">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#community" class="nav-link">Community</a>
+      <a href="#events" class="nav-link">Events</a>
+      <a href="#support" class="nav-link">Support</a>
+    </div>
+  </nav>
 
-  <!-- Infos Section -->
+  <!-- Welcome Section -->
+  <section id="home" class="apple-glass">
+    <h1>Willkommen auf TOOK WEAR</h1>
+    <p>Wargame-Action auf höchstem Level — baue deine eigene Wargear-Maschine aus TNT-Kanonen, Redstone und cleverer Technik und tritt in spannenden Schlachten gegen andere Spieler an!</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="apple-glass">
+    <h2>Über den Server</h2>
+    <p>Bei TOOK WEAR dreht sich alles um Kreativität, Strategie und fairen Wettkampf. Ob Anfänger oder Veteran — jeder kann mitbauen, testen und an Turnieren teilnehmen.</p>
+  </section>
+
+  <!-- Features Section -->
   <section class="apple-glass">
     <h2>Features</h2>
-    <ul>
-      <li>Schnelle & faire Wargear-Kämpfe</li>
-      <li>Individuelle Bauserver</li>
-      <li>Aktive Community – Clans oder solo</li>
-      <li>Turniere & Events</li>
-      <li>Lernen & Skills verbessern</li>
-    </ul>
-    <p><strong>IP-Adresse:</strong> took-wear.gl.joinmc.link</p>
-    <p><strong>Discord:</strong> <a href="https://discord.gg/JAJ4M7CEQr" target="_blank">Hier beitreten</a></p>
+    <div class="features-grid">
+      <div class="feature-item">
+        <h3>Faire Kämpfe</h3>
+        <p>Schnelle & faire Wargear-Kämpfe — zeig dein Können im Bau und in der Strategie.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Bauserver</h3>
+        <p>Individuelle Bauserver zum Entwerfen und Testen deiner Wargears.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Community & Teams</h3>
+        <p>Schließe dich Teams an und kämpfe — unsere Community hilft dir, besser zu werden.</p>
+      </div>
+    </div>
   </section>
+
+  <!-- Events Section -->
+  <section id="events" class="apple-glass">
+    <h2>Turniere & Events</h2>
+    <p>Regelmäßige Turniere: Wer wird Champion von TOOK WEAR?</p>
+    <p>Wir veranstalten freundschaftliche Runden, Zeit-Events und Ranglisten-Turniere. Schau im Discord vorbei, um Termine und Ergebnisse zu erfahren.</p>
+  </section>
+
+  <!-- Quick Connect Section -->
+  <section id="community" class="apple-glass">
+    <h2>Schnell verbinden</h2>
+    <div class="ip-container">
+      <p><strong>IP-Adresse:</strong> <span id="ip1">took-wear.gl.joinmc.link</span> 
+        <button class="copy-btn" onclick="copyToClipboard('ip1')">Kopieren</button>
+      </p>
+      <p><strong>IP-Adresse 2:</strong> <span id="ip2">tookwear.falixsrv.me</span> 
+        <button class="copy-btn" onclick="copyToClipboard('ip2')">Kopieren</button>
+      </p>
+      <p class="note">Hinweis: IP 2 erfordert Aktivierung unter <a href="https://falixnodes.net/startserver" target="_blank">https://falixnodes.net/startserver</a></p>
+    </div>
+    <a href="https://discord.gg/JAJ4M7CEQr" target="_blank" class="discord-btn">Unser Discord beitreten</a>
+  </section>
+
+  <!-- Server Status Section -->
+  <section class="apple-glass">
+    <h2>Server Status</h2>
+    <div class="server-status">
+      <div class="server-info">
+        <h3>Server 1: took-wear.gl.joinmc.link</h3>
+        <p>Status: <span id="status1" class="status-indicator">Prüfe...</span></p>
+        <p>Spieler: <span id="players1">-</span></p>
+      </div>
+      <div class="server-info">
+        <h3>Server 2: tookwear.falixsrv.me</h3>
+        <p>Status: <span id="status2" class="status-indicator">Prüfe...</span></p>
+        <p>Spieler: <span id="players2">-</span></p>
+      </div>
+      <div class="total-players">
+        <h3>Gesamte Spieler: <span id="totalPlayers">-</span></h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rules Section -->
+  <section class="apple-glass">
+    <h2>Regeln (Kurz)</h2>
+    <ul class="rules-list">
+      <li>Kein Cheaten / Exploiten</li>
+      <li>Fairplay & Respekt</li>
+      <li>Baue im vorgesehenen Bereich</li>
+    </ul>
+  </section>
+
+  <!-- Support Section -->
+  <section id="support" class="apple-glass">
+    <h2>Support</h2>
+    <p>Fragen? Schreib uns auf Discord oder nutze den Support-Kanal.</p>
+  </section>
+
+  <!-- How to Play Section -->
+  <section class="apple-glass">
+    <h2>Wie du mitspielst</h2>
+    <ol class="how-to-play">
+      <li>Starte Minecraft (Java Edition empfohlen).</li>
+      <li>Gehe in "Multiplayer" → "Server hinzufügen".</li>
+      <li>Gib als Server-Adresse ein: <strong>took-wear.gl.joinmc.link</strong> oder <strong>tookwear.falixsrv.me</strong>.</li>
+      <li>Betrete den Server und besuche den Baubereich oder die Arena.</li>
+      <li><strong>Tipp:</strong> Trete unserem Discord bei, um Teams zu finden, an Events teilzunehmen und Bauideen zu teilen.</li>
+    </ol>
+  </section>
+
+  <!-- For Clan Leaders Section -->
+  <section class="apple-glass">
+    <h2>Für Clan-Leader & Veranstalter</h2>
+    <p>Möchtet ihr ein Turnier ausrichten? Kontaktiert uns über Discord — wir helfen bei Organisation & Moderation.</p>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
