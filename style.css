@@ -1,0 +1,33 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: sans-serif;
+  background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+}
+
+.apple-glass {
+  background: linear-gradient(135deg, rgba(255,255,255,0.25), rgba(255,255,255,0.05));
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 30px;
+  margin: 20px;
+  max-width: 800px;
+  text-align: center;
+}
+
+a {
+  color: #00f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
