@@ -2,8 +2,7 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: sans-serif;
-  background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center fixed;
-  background-size: cover;
+  background: #1a1a1a;
   display: flex;
   flex-direction: column;
   align-items: center;
